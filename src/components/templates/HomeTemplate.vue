@@ -22,11 +22,18 @@ list.value = infos;
 @import "@/assets/scss/mixins";
 
 .home-template {
-  background: $bg;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    99deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(161, 0, 53, 1.5) 0%,
+    rgba(255, 134, 158, 0.9948354341736695) 160%
+  );
   min-height: 100vh;
   width: 100%;
   padding: $s2;
   transition: 0.2s ease-in;
+  position: rela;
 
   &__content {
     max-width: 1100px;
