@@ -1,5 +1,7 @@
-<script setup></script>
+<script setup>
+import HomeTemplate from "@/components/templates/HomeTemplate.vue";
+</script>
 
-<template>Hello</template>
-
-<style scoped lang="scss"></style>
+<template>
+  <HomeTemplate />
+</template>
