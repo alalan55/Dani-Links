@@ -1,13 +1,18 @@
 <template>
   <section class="home-template">
-    <HeaderProfile />
-    <MediaList />
+    <HeaderProfile  />
+    <MediaList :infos="list" />
   </section>
 </template>
 
 <script setup>
+import { ref } from "vue";
 import HeaderProfile from "../molecules/HeaderProfile.vue";
 import MediaList from "../molecules/MediasList.vue";
+import { infos } from "@/mock";
+
+const list = ref([]);
+list.value = infos;
 </script>
 
 <style lang="scss" scoped>

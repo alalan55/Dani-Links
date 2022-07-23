@@ -1,12 +1,17 @@
 <template>
   <div class="button">
     <div class="button__title">
-      <span> Título do botão </span>
+      <span> {{props.buttonData.title}} </span>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const props = defineProps({
+    buttonData: {type: Object, required: true, default: null}
+})
+
+</script>
 
 <style lang="scss" scoped>
 @import "@/assets/scss/utils";
