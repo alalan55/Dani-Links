@@ -1,0 +1,9 @@
+@mixin dimension() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin dimensionChild {
+    width: 80%;
+}
