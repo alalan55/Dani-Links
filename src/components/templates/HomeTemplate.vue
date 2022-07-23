@@ -1,6 +1,6 @@
 <template>
   <section class="home-template">
-    <HeaderProfile/>
+    <HeaderProfile />
   </section>
 </template>
 
@@ -15,6 +15,7 @@ import HeaderProfile from "../molecules/HeaderProfile.vue";
   background: $bg;
   height: 100vh;
   width: 100%;
+  padding: $s2;
   //   color: $yellow-1;
 }
 </style>

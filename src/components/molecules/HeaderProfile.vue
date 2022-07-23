@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <figure>
-      <div class="header__image"></div>
+      <img src="/img/profile-image.jpg" alt="Imagem de perfil" />
     </figure>
     <div class="header__profile">
       <span> @profile_user </span>
@@ -16,18 +16,22 @@
 
 .header {
   width: 100%;
-  padding: $s2 $s1;
+  padding: 0 $s1;
   color: whtie;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: $s1;
   figure {
-    background: white;
-
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
   &__profile {
     span {
