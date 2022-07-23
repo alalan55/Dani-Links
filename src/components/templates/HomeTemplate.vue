@@ -1,18 +1,20 @@
 <template>
   <section class="home-template">
-    <h1>home template</h1>
+    <HeaderProfile/>
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import HeaderProfile from "../molecules/HeaderProfile.vue";
+</script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/utils';
+@import "@/assets/scss/utils";
 
-.home-template{
-    background: $bg;
-    height: 100vh;
-    width: 100%;
+.home-template {
+  background: $bg;
+  height: 100vh;
+  width: 100%;
+  //   color: $yellow-1;
 }
-
 </style>
