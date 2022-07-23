@@ -37,7 +37,7 @@
     span {
       font-size: 1.25em;
       font-weight: 800;
-      color: $yellow-1;
+      color: $pink-3;
     }
   }
 }

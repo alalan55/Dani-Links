@@ -1,11 +1,13 @@
 <template>
   <section class="home-template">
     <HeaderProfile />
+    <MediaList />
   </section>
 </template>
 
 <script setup>
 import HeaderProfile from "../molecules/HeaderProfile.vue";
+import MediaList from "../molecules/MediasList.vue";
 </script>
 
 <style lang="scss" scoped>
