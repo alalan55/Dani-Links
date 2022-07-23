@@ -1,7 +1,9 @@
 <template>
   <section class="home-template">
-    <HeaderProfile  />
-    <MediaList :infos="list" />
+    <div class="home-template__content">
+      <HeaderProfile />
+      <MediaList :infos="list" />
+    </div>
   </section>
 </template>
 
@@ -17,12 +19,32 @@ list.value = infos;
 
 <style lang="scss" scoped>
 @import "@/assets/scss/utils";
+@import "@/assets/scss/mixins";
 
 .home-template {
   background: $bg;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   padding: $s2;
-  //   color: $yellow-1;
+  transition: 0.2s ease-in;
+
+  &__content {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    @include dimension;
+    &__content {
+      @include dimensionChild;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    @include dimension;
+    &__content {
+      @include dimensionChild;
+    }
+  }
 }
 </style>

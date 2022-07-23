@@ -2,7 +2,7 @@ export const infos = [
   {
     id: 0,
     title: "Whatsapp",
-    path: "/",
+    path: "https://api.whatsapp.com/send?1=pt_BR&phone=55013991131563",
   },
   {
     id: 1,
@@ -16,11 +16,6 @@ export const infos = [
   },
   {
     id: 3,
-    title: "Outra rota",
-    path: "/",
-  },
-  {
-    id: 4,
     title: "Outra rota",
     path: "/",
   },

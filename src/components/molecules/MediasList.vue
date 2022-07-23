@@ -12,8 +12,8 @@
 import dlButton from "../atoms/dl-button.vue";
 
 const props = defineProps({
-    infos:{type: Array, required: true}
-})
+  infos: { type: Array, required: true },
+});
 </script>
 
 <style lang="scss" scoped>

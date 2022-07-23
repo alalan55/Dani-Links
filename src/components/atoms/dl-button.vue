@@ -1,22 +1,25 @@
 <template>
-  <div class="button">
+  <div class="button" @click="go">
     <div class="button__title">
-      <span> {{props.buttonData.title}} </span>
+      <span> {{ props.buttonData.title }} </span>
     </div>
   </div>
 </template>
 
 <script setup>
 const props = defineProps({
-    buttonData: {type: Object, required: true, default: null}
-})
+  buttonData: { type: Object, required: true, default: null },
+});
 
+const go = () => {
+  window.open(props.buttonData.path, "_blank");
+};
 </script>
 
 <style lang="scss" scoped>
 @import "@/assets/scss/utils";
 .button {
-  border: 2px solid $pink-1;
+  border: 3px solid $pink-1;
   padding: $s1;
   border-radius: 10px;
   transition: 0.2s ease-in;
@@ -32,6 +35,8 @@ const props = defineProps({
       font-weight: 700;
       color: $pink-2;
       cursor: pointer;
+      overflow-wrap: break-word;
+      word-break: break-word;
     }
   }
 
